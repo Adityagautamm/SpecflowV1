@@ -23,14 +23,15 @@ namespace SpecFlowProject1.Hooks
         [BeforeScenario]
         public static void Initialisation()
         {
+           
             FrameBase.Initialization();         
             ScenarioContextStorage.createContext();
+            ScenarioContextStorage.resetContext();
         }
 
         [AfterScenario]
         public static void dropContextSTorage() 
         {
-            ScenarioContextStorage.resetContext();
             FrameBase.TearDown();
 
         }

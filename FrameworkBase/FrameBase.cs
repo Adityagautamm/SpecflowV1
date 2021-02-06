@@ -42,7 +42,7 @@ namespace SpecFlowProject1.FrameworkBase
 		{
 			try
 			{
-				Thread.Sleep(2000);
+				Thread.Sleep(4000);
 			}
 			catch (Exception e)
 			{
